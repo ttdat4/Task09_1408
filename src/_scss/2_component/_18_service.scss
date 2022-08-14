@@ -1,0 +1,217 @@
+.c-service {
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+        display: inherit;
+    }
+
+    &__img {
+        max-width: 400px;
+        width: 100%;
+        margin-right: 40px;
+
+        @include sp {
+            max-width: 100%;
+            margin-right: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        picture:nth-child(odd) {
+            @include sp {
+                width: 48.77%;
+            }
+        }
+
+        picture:nth-child(even) {
+            @include sp {
+                width: 51.23%;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        max-width: 560px;
+        width: 100%;
+        margin-right: -40px;
+
+        @include sp {
+            max-width: 100%;
+            padding: 0 20px 0 10px;
+            margin-right: 0;
+        }
+
+        &1 {
+            @include sp {
+                margin-bottom: 12px;
+            }
+        }
+
+        &9 {
+            font-size: 1.6rem;
+
+            @include sp {
+                font-size: 1.4rem;
+                letter-spacing: 0;
+            }
+        }
+
+        &1title {
+            font-size: 1.8rem;
+            line-height: 1.67;
+            font-weight: 500;
+            margin-bottom: 11px;
+            position: relative;
+            text-indent: 17px;
+            padding-right: 5px;
+            letter-spacing: 0.03em;
+            @include sp {
+                font-size: 1.6rem;
+                line-height: 1.54;
+                font-weight: 700;
+                margin-bottom: 4px;
+                letter-spacing: 0;
+            }
+        }
+
+          
+
+
+        &1title::before {
+            content: "";
+            background: #3c3c3c;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 12px;
+            left: 1px;
+            border-radius: 100%;
+            @include sp {
+                width: 7px;
+                height: 7px;
+                top: 10px;
+                left: 1px;
+            }
+        }
+
+        &1sub {
+            line-height: 1.75;
+            margin: 0 0 15px 20px;
+            letter-spacing: 0.02em;
+            font-weight: 300;
+            @include sp {
+                line-height: 1.33;
+                margin: 0 0 3px 8px;
+                font-size: 1.2rem;
+                letter-spacing: 0.02em;
+                font-weight: 400;
+            }
+
+            sub {
+                display: contents;
+            }
+        }
+
+        &3sub {
+            margin-bottom: 9px;
+
+            @include sp {
+                padding-left: 10px;
+                line-height: 1.9;
+            }
+        }
+
+        &01 {
+            .u-text9 {
+                letter-spacing: 0.2em;
+            }
+        }
+
+        &2 {
+            p:nth-child(1) {
+                margin-bottom: 3px;
+                @include sp {
+                    margin-bottom: 1px;
+                }
+            }
+        }
+
+        &3 {
+            @include sp {
+                margin-bottom: 9px;
+            }
+        }
+
+        &4 {
+            @include sp {
+                margin-bottom: 9px;
+            }
+        }
+
+        &5 {
+
+            @include sp {
+                margin-bottom: 9px;
+            }
+
+            p:nth-child(1) {
+                margin-bottom: 12px;
+            }
+
+            p:nth-child(2) {
+                padding-left: 3px;
+                margin-bottom: 11px;
+                @include sp {
+                    font-size: 1.4rem;
+                    line-height: 1.75;
+                    padding-left: 2px;
+                    margin-bottom: 13px;
+                }
+            }
+        }
+
+        &6 {
+            p {
+                margin-top: 0;
+            }
+        }
+
+        &7 {
+            @include sp {
+                letter-spacing: 0.04em;
+                margin-top: 14px;
+            }
+        }
+
+        &8 {
+            margin-top: 52px;
+            @include sp {
+                margin-top: 30px;
+            }
+
+            h2 {
+                margin: 0 0 13px;
+            }
+
+            p:nth-child(1) {
+                margin-bottom: 7px;
+            }
+
+            p:nth-child(2) {
+                padding-left: 3px;
+                @include sp {
+                    font-size: 1.4rem;
+                    line-height: 1.78;
+                    padding-left: 2px;                
+                }
+            }
+        }
+    }
+}

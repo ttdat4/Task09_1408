@@ -1,0 +1,49 @@
+.c-tradingname {
+    &wrapper {
+        display: flex;
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto 4.2%;
+
+        &__img {
+            max-width: 308px;
+            width: 100%;
+            margin-right: 68px;
+            padding-top: 9px;
+        }
+
+        &__text {
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 1.7;
+
+            p {
+                display: flex;
+            }
+
+            &1 {
+                margin-right: 101px;
+                position: relative;
+                width: 32px;
+                display: inline-block;
+            }
+
+            &1::before {
+                content: "";
+                background: #fff;
+                width: 62px;
+                height: 1px;
+                position: absolute;
+                top: 46%;
+                left: 160%;
+                transform: translatey(-50%);
+            }
+
+            &2 {
+                font-size: 2.4rem;
+                letter-spacing: 0.02em;
+                line-height: 1.9;
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+///*------------------------------------------------------------
+//Anchor position
+//------------------------------------------------------------*/
+//.u-anchor:before {
+//	content:"";
+//	margin-top: -100px;
+//	padding-top: 100px;
+//}
+
+.u-title {
+    font-size: 3.4rem;
+    color: #0080cc;
+    line-height: 0.9;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    position: relative;
+    margin: 102px 0 17px;
+
+    @include tab {
+        font-size: 3rem;
+        letter-spacing: 0.054em;
+        margin: 62px 0 13px;
+    }
+
+    @include sp {
+        font-size: 2.4rem;
+        letter-spacing: 0.05em;
+        margin: 39px 0 9px;
+    }
+}
+
+.u-subtitle {
+    font-size: 1.6rem;
+    color: #3c3c3c;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 31px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+
+    @include tab {
+        font-size: 1.4rem;
+        letter-spacing: 0.024em;
+        margin-bottom: 17px;
+    }
+
+    @include sp {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+}
+
+.u-wimg1 {
+
+    @include sp {
+        width: 50%;
+    }
+}
+
+//------------------------------------------------------------
+// margin
+//------------------------------------------------------------
+
+//------------------------------------------------------------
+// color
+
+.u-0080cc {
+    color: #0080cc;
+}
+
+.u-ff5800 {
+    color: #ff5800;
+}
+//------------------------------------------------------------
